@@ -474,9 +474,9 @@ type idToken struct {
 	Issuer       string                 `json:"iss"`
 	Subject      string                 `json:"sub"`
 	Audience     audience               `json:"aud"`
-	Expiry       jsonTime               `json:"exp"`
-	IssuedAt     jsonTime               `json:"iat"`
-	NotBefore    *jsonTime              `json:"nbf"`
+	Expiry       time.Time              `json:"exp"`
+	IssuedAt     time.Time              `json:"iat"`
+	NotBefore    *time.Time             `json:"nbf"`
 	Nonce        string                 `json:"nonce"`
 	AtHash       string                 `json:"at_hash"`
 	ClaimNames   map[string]string      `json:"_claim_names"`
