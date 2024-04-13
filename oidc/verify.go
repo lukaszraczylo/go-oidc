@@ -227,7 +227,7 @@ func (v *IDTokenVerifier) Verify(ctx context.Context, rawIDToken string) (*IDTok
 	}
 	var token idToken
 	if err := json.Unmarshal(payload, &token); err != nil {
-		return nil, fmt.Errorf("oidc: failed to unmarshal claims: %v", err)
+		return nil, fmt.Errorf("oidc: failed to unmarshal claims: %v. Claims: %+v", err, string(payload))
 	}
 
 	distributedClaims := make(map[string]claimSource)
