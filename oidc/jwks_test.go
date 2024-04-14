@@ -17,6 +17,7 @@ import (
 	"time"
 
 	jose "github.com/lukaszraczylo/go-jose/v4"
+	"github.com/lukaszraczylo/go-jose/v4/json"
 )
 
 type keyServer struct {

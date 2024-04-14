@@ -16,6 +16,7 @@ import (
 	"sync"
 	"time"
 
+	"github.com/lukaszraczylo/go-jose/v4/json"
 	"golang.org/x/oauth2"
 )
 
