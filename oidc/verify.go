@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"context"
 	"encoding/base64"
-	"encoding/json"
 	"errors"
 	"fmt"
 	"io"
@@ -12,6 +11,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/goccy/go-json"
 	jose "github.com/lukaszraczylo/go-jose/v4"
 	"golang.org/x/oauth2"
 )
