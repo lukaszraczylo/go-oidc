@@ -11,10 +11,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/goccy/go-json"
+	jsoniter "github.com/json-iterator/go"
+
 	jose "github.com/lukaszraczylo/go-jose/v4"
 	"golang.org/x/oauth2"
 )
+
+var json = jsoniter.ConfigCompatibleWithStandardLibrary
 
 const (
 	issuerGoogleAccounts         = "https://accounts.google.com"
